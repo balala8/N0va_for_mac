@@ -61,7 +61,7 @@ class LuMing{
         var url = ""
         
         // 1%的概率播放 game 视频
-        if random_Bool(prop: 100) {
+        if random_Bool(prop: 1) {
             let name = get_name(path:self.game)
             // game 文件夹为空，不播放 game
             if name=="1" {

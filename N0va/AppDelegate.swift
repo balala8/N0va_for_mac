@@ -144,6 +144,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             let url = URL.init(string: urlwithPercentEscapes!)
             showInFinder(url:url)
             
+            self.model = WallpaperModel.init(type: .video, url: url!)
+            self.writeCache()
+            
+            
         case "在访达中打开color":
             
             let directoryPath = NSHomeDirectory() + "/Library/Application Support/N0va/color"
@@ -156,27 +160,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             let url = URL.init(string: urlwithPercentEscapes!)
             showInFinder(url:url)
             
-        case "选择game路径":
-            guard let url = pickFile() else {
-                return
-            }
+            self.model = WallpaperModel.init(type: .video, url: url!)
+            self.writeCache()
             
-            UserDefaults.standard.setValue(url.absoluteString, forKey: "videoPath")
-            UserDefaults.standard.synchronize()
-            
-            self.reloadWallpaperWindows()
-            self.reloadCache()
-        case "选择Color路径":
-            guard let url = pickFile() else {
-                return
-            }
-         
-            UserDefaults.standard.setValue(url.absoluteString, forKey: "colorPath")
-            UserDefaults.standard.synchronize()
-
-            
-            self.reloadWallpaperWindows()
-            self.reloadCache()
         case "静音":
             self.muteItem.title = "取消静音"
             UserDefaults.standard.setValue(1, forKey: "mute")

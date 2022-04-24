@@ -28,6 +28,8 @@
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
+		<key>NSAllowsArbitraryLoadsUsageDescription</key>
+		<dict/>
 	</dict>
 	<key>NSPrincipalClass</key>
 	<string>N0va.Application</string>
