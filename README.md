@@ -33,6 +33,9 @@
 如果您有视频也想加入播放队列，直接放入 game 目录下即可（仅支持 .mp4文件）。game 目录可为空。
 
 ## 引用
-[提取视频请看这里](https://github.com/youfantan/N0vaResourceExtractor)
-[mac动态壁纸软件](https://github.com/zx1262111739/DynamicWallpaper)
+
+[提取视频请看这里](https://github.com/youfantan/N0vaResourceExtractor)<br>
+
+[mac动态壁纸软件](https://github.com/zx1262111739/DynamicWallpaper)<br>
+
 所以视频文件均来自鹿鸣（米哈游出品）,模型为米哈游版权所有。
